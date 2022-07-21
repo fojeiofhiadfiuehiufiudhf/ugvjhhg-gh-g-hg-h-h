@@ -1,0 +1,187 @@
+section {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 50px;
+  }
+}
+
+.hello {
+  background: $lightGreen;
+  background: -webkit-linear-gradient(to right, $olive, $lightGreen);
+  background: linear-gradient(to right, $olive, $lightGreen);
+}
+
+.birthday {
+  background: $skyBlue;
+  background: -webkit-linear-gradient(to top, $white, $lightBlue, $skyBlue);
+  background: linear-gradient(to top, $white, $lightBlue, $skyBlue);
+  img {
+    max-width: 380px;
+  }
+}
+
+.age {
+  background: $red;
+  background: -webkit-linear-gradient(to bottom, $darkRed, $red);
+  background: linear-gradient(to bottom, $darkRed, $red);
+  img {
+    max-width: 350px;
+    animation: age 2s linear infinite reverse;
+  }
+}
+
+@keyframes age {
+  100% {
+    transform: scale(0) rotate(90deg);
+  }
+  66% {
+    transform: scale(0.3) rotate(180deg);
+  }
+  33% {
+    transform: scale(0.6) rotate(270deg);
+  }
+  10%,
+  0% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.date {
+  background: $lightPink;
+  background: -webkit-linear-gradient(to top, $whitePink, $lightPink);
+  background: linear-gradient(to top, $whitePink, $lightPink);
+}
+
+.entertainment {
+  background: $skyBlue;
+  background: -webkit-linear-gradient(to top, $white, $lightBlue, $skyBlue);
+  background: linear-gradient(to top, $white, $lightBlue, $skyBlue);
+}
+
+.movie {
+  background: #b79891;
+  background: -webkit-linear-gradient(to top, #94716b, #b79891);
+  background: linear-gradient(to top, #94716b, #b79891);
+  img {
+    max-width: 350px;
+  }
+}
+.dance {
+  background: $brown;
+  background: -webkit-linear-gradient(225deg, $darkGreen, $brown);
+  background: linear-gradient(225deg, $darkGreen, $brown);
+}
+
+.stretching {
+  background: $purple;
+  background: -webkit-linear-gradient(to top, $cream, $purple);
+  background: linear-gradient(to top, $cream, $purple);
+}
+
+.rollerblading {
+  background: $pink;
+  background: -webkit-linear-gradient(to right, $darkPink, $pink);
+  background: linear-gradient(to right, $darkPink, $pink);
+  div {
+    text-align: center;
+    img {
+      max-width: 380px;
+      padding: 10px;
+    }
+  }
+}
+
+.lifeguard {
+  background: $water;
+  background: -webkit-linear-gradient(to right, $ligthPurple, $water);
+  background: linear-gradient(to right, $ligthPurple, $water);
+  div {
+    text-align: center;
+    img {
+      max-width: 380px;
+      padding: 10px;
+    }
+  }
+}
+
+.white-house {
+  background: $black;
+  background: -webkit-linear-gradient(to bottom, #434343, $black);
+  background: linear-gradient(to bottom, #434343, $black);
+}
+
+.food {
+  background: $yellow;
+  background: -webkit-linear-gradient(to top, $mango, $yellow);
+  background: linear-gradient(to top, $mango, $yellow);
+}
+
+.waiting {
+  background: #215f00;
+  background: -webkit-linear-gradient(to bottom, #e4e4d9, #215f00);
+  background: linear-gradient(to bottom, #e4e4d9, #215f00);
+  div {
+    text-align: center;
+    img {
+      max-width: 380px;
+      padding: 10px;
+    }
+  }
+}
+
+.distance {
+  background: $black;
+  background: -webkit-linear-gradient(225deg, $green, $black);
+  background: linear-gradient(225deg, $green, $black);
+}
+
+.contact {
+  background: $lightWood;
+  background: -webkit-linear-gradient(to top, $wood, $lightWood);
+  background: linear-gradient(to top, $wood, $lightWood);
+  img {
+    max-width: 350px;
+  }
+}
+
+.mystery {
+  background: $violet;
+  background: -webkit-linear-gradient(to top, $lightViolet, $violet);
+  background: linear-gradient(to top, $lightViolet, $violet);
+  img {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .rollerblading,
+  .lifeguard,
+  .waiting {
+    div {
+      img {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+  .title {
+    font-size: 2rem;
+    padding: 1em;
+    &--p {
+      padding-bottom: 0em;
+    }
+  }
+  .subtitle {
+    font-size: 1rem;
+    padding: 1em;
+  }
+}
